@@ -29,7 +29,6 @@ header {
 
 #home {
     text-align: center;
-    border: 1px solid #000;
 }
 
 .video-text {
@@ -37,4 +36,10 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.video-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
