@@ -1,0 +1,42 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    margin: 0; padding: 0;
+}
+
+.videoArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -9999;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+/* section home */
+
+#home {
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
