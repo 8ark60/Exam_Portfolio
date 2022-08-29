@@ -104,7 +104,7 @@ header {
     border-radius: 6px;
     position: absolute;
     top: 14px;
-    left: 26px;
+    left: 50px;
 }
 
 .career-box ul li dl dd.line::after {
@@ -115,7 +115,7 @@ header {
     background-color: #333;
     position: absolute;
     top: 25px;
-    left: 31px;
+    left: 55px;
 }
 
 /* section skills */
@@ -124,6 +124,36 @@ header {
     border: 1px solid #000;
     text-align: center;
 }
+
+.skills-title {
+    font-size: 36px;
+}
+
+.skills-title::after {
+    content: '';
+    display: block;
+    width: 112px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    width: 50%;
+}
+
+
+
 
 /* section projects */
 
