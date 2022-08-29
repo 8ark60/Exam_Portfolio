@@ -117,3 +117,31 @@ header {
     top: 25px;
     left: 31px;
 }
+
+/* section skills */
+
+#skills {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* section projects */
+
+#projects {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* section contact */
+
+#contact {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    border: 1px solid #000;
+    text-align: center;
+}
