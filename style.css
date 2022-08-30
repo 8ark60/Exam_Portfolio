@@ -15,6 +15,8 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    z-index: 1;
+    margin: 30px 0;
 }
 
 .nav ul {
@@ -29,6 +31,15 @@ header {
 
 #home {
     text-align: center;
+    position: relative;
+}
+
+.down {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    font-size: 35px;
+    transform: translateX(-50%);
 }
 
 .video-text {
@@ -47,20 +58,21 @@ header {
 /* section about */
 
 #about {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     text-align: center;
+    padding: 50px 0;
 }
 
 .about-title {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .about-title::after {
     content: '';
     display: block;
-    width: 112px;
-    height: 10px;
-    background-color: #000;
+    width: 100px;
+    height: 3px;
+    background-color: skyblue;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -172,20 +184,91 @@ header {
 /* section projects */
 
 #projects {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     text-align: center;
+    background: url(./images/project-bg.jfif) no-repeat center/cover;
+    padding: 50px 0;
+}
+
+.projects-title {
+    font-size: 32px;
+}
+
+.projects-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: skyblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.projects-box {
+    margin-top: 50px;
+}
+
+.projects-box i {
+    font-size: 150px;
 }
 
 /* section contact */
 
 #contact {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     text-align: center;
+    padding: 50px 0;
 }
 
+.contact-title {
+    font-size: 32px;
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: skyblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.contact-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info {
+    font-size: 25px;
+    text-align: left;
+}
+
+.contact-info li {
+    margin: 30px 0;
+}
+
+.contact-info i {
+    margin-right: 30px;
+}
+
+
+.contact-talk img {
+    width: 300px;
+    height: 300px;
+}
 /* Footer */
 
 footer {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    background: url(./images/project-bg.jfif) no-repeat center/cover;
     text-align: center;
+    padding: 50px 0;
 }
+
