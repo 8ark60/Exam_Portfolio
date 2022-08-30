@@ -69,9 +69,15 @@ header {
 
 .about-box {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
     margin-top: 50px;
+}
+
+.img-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .career-box ul li dl {
@@ -118,40 +124,42 @@ header {
     left: 55px;
 }
 
-/* section skills */
-
-#skills {
-    border: 1px solid #000;
-    text-align: center;
-}
-
-.skills-title {
-    font-size: 36px;
-}
-
-.skills-title::after {
-    content: '';
-    display: block;
-    width: 112px;
-    height: 10px;
-    background-color: #000;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-}
-
-.skills-list {
-    display: flex;
-    justify-content: space-evenly;
+.skills-box {
+    /* border: 1px solid #000; */
     margin-top: 50px;
-    flex-wrap: wrap;
+}
+.character-box p,
+.skills-box p {
+    text-align: left;
+    font-size: 20px;
+    height: 32px;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
-.skills-item {
-    width: 50%;
+.character-box ul::after,
+.skills-box ul::after {
+    content: ''; display: block; clear: both; visibility: hidden;
 }
 
+.skills-box ul li {
+    float: left;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.character-box {
+    /* border: 1px solid #000; */
+    margin-top: 30px;
+}
+
+.character-box ul li {
+    float: left;
+    margin: 0 30px;
+    background-color: pink;
+    border-radius: 20px;
+}
 
 
 
