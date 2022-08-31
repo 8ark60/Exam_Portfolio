@@ -3,6 +3,8 @@
     text-decoration: none;
     color: #000;
     margin: 0; padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior:smooth;
 }
 
 /* header */
@@ -25,6 +27,14 @@ header {
 
 .nav ul li {
     margin: 0 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+.nav ul li:hover {
+    background-color: rgb(115, 211, 255);
+    border-color: #fff;
 }
 
 /* section home */
@@ -53,6 +63,21 @@ header {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+
+.video-text .first-text {
+    font-size: 36px;
+    padding: 25px 0;
+}
+
+.video-text .second-text {
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.video-text .home-description {
+    font-size: 20px;
 }
 
 /* section about */
@@ -87,13 +112,19 @@ header {
 }
 
 .img-box img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
+.img-box ul li p {
+    margin: 5px 0;
+}
+
+
 .career-box ul li dl {
-    width: 535px;
+    width: 540px;
 }
 
 .career-box ul li dl dt {
@@ -107,7 +138,7 @@ header {
 
 .career-box ul li dl dd {
     padding-left: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
 }
  
@@ -157,15 +188,37 @@ header {
 
 .skills-box ul li {
     float: left;
-    margin: 0 15px;
-    font-size: 20px;
-}
-
-.skills-box ul li span:hover {
-    color: pink;
     cursor: pointer;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    box-shadow: rgb(17 17 26 / 5%) 0px 1px 0px, rgb(17 17 26 / 10%) 0px 0px 8px;
+    transition: .2s;
+    opacity: 0.85;
+    background: #fff;
 }
 
+
+.skills-box ul li:hover:nth-child(1) {
+    background-color: rgba(255, 97, 97, 0.4);
+}
+.skills-box ul li:hover:nth-child(2) {
+    background-color: rgba(81, 107, 235, 0.4);
+}
+.skills-box ul li:hover:nth-child(3) {
+    background-color: rgb(211, 230, 103);
+}
+.skills-box ul li:hover:nth-child(4) {
+    background-color: rgba(154, 6, 128, 0.4);
+}
+.skills-box ul li:hover:nth-child(5) {
+    background-color: rgba(132, 223, 255, 0.4);
+}
 
 .character-box {
     /* border: 1px solid #000; */
@@ -174,9 +227,23 @@ header {
 
 .character-box ul li {
     float: left;
-    margin: 0 30px;
-    background-color: pink;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 8px 16px;
     border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    box-shadow: rgb(17 17 26 / 5%) 0px 1px 0px, rgb(17 17 26 / 10%) 0px 0px 8px;
+    transition: .2s;
+    opacity: 0.85;
+    background: #fff;
+}
+
+.character-box ul li:hover {
+    background-color: rgba(255, 132, 249, 0.973);
 }
 
 
@@ -186,12 +253,13 @@ header {
 #projects {
     /* border: 1px solid #000; */
     text-align: center;
-    background: url(./images/project-bg.jfif) no-repeat center/cover;
+    background: url(./images/bg1.jpg) no-repeat center/cover;
     padding: 50px 0;
 }
 
 .projects-title {
     font-size: 32px;
+    color: rgb(255, 0, 0);
 }
 
 .projects-title::after {
@@ -199,7 +267,7 @@ header {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: skyblue;
+    background-color: rgb(255, 0, 0);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -212,6 +280,11 @@ header {
 
 .projects-box i {
     font-size: 150px;
+    color: rgb(255, 0, 0);
+}
+
+.projects-box p {
+    color: rgb(255, 0, 0);
 }
 
 /* section contact */
@@ -267,7 +340,7 @@ header {
 
 footer {
     /* border: 1px solid #000; */
-    background: url(./images/project-bg.jfif) no-repeat center/cover;
+    background: url(./images/bg1.jpg) no-repeat bottom/cover;
     text-align: center;
     padding: 50px 0;
 }
