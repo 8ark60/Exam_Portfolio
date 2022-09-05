@@ -248,6 +248,7 @@
 
   .skillset__title {
     color: var(--color-white);
+    font-weight: bold;
   }
 
   .skillset__left {
@@ -279,6 +280,7 @@
   .skillset__right {
     flex-basis: 40%;
   }
+
 
   .tools {
     background-color: var(--color-grey);
