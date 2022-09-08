@@ -108,3 +108,52 @@ header {
         transform: translateY(50px);
     }
 }
+
+
+/* section about */
+
+#about {
+    text-align: center;
+}
+
+.about-inner {
+    width: 100%;
+    display: flex;
+}
+
+.about-bg {
+    background-color: black;
+    width: 40%;
+    height: 400px;
+}
+
+.about-info {
+    width: 60%;
+    text-align: left;
+}
+
+.character h4,
+.skills h4 {
+    border-bottom: 1px solid black;
+}
+
+.character ul::after {
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+.character ul li {
+    float: left;
+}
+
+.skills-box {
+    display: flex;
+}
+
+.skills-box div {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    line-height: 60px;
+}
